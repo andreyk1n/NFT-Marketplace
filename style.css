@@ -5,17 +5,49 @@
 
 .wrapper {
     background-color: #101010;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 html {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+/* fonts */
+
+.title-30 {
+    font-size: 30px;
+}
+
+.title-20 {
+    font-size: 20px;
+}
+
+.title-50 {
+    font-size: 50px;
+}
+
+.title-70 {
+    font-size: 70px;
+}
+
+.white {
+    color: white;
+}
+
+.muted {
+    font-size: 16px;
+    color: gray;
+}
+
 /* header */
 
 header {
+    width: 90%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -56,4 +88,114 @@ header {
 .connect-value-btn:hover {
     background: #2a8574;
     cursor: pointer;
+}
+
+/* main page */
+
+.main-page {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+}
+
+.main-page-left {
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.main-page-right {
+    width: 800px;
+}
+
+.explore-btn {
+    width: 150px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: .8s;
+    background: #52FFE0;
+    border-radius: 50px;
+}
+
+.explore-btn a {
+    color: black;
+    text-decoration: none;
+}
+
+.explore-btn:hover {
+    background: #2a8574;
+    cursor: pointer;
+}
+
+.main-page-left-grid-container {
+    display: grid;
+    grid-template-areas: 
+    'explore creators curly'
+    'artworks auction artist';
+}
+
+.explore-btn {
+    grid-area: explore;
+}
+
+.creators-img {
+    grid-area: creators;
+}
+
+.curly-arrow {
+    grid-area: curly;
+}
+
+.artworks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: artworks;
+}
+
+.auction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: auction;
+}
+
+.artist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: artist;
+}
+
+.main-page-img-container {
+    width: 675px;
+    height: 658px;
+    background: url(./images/main-page.png) no-repeat;
+    background-size: cover;
+
+}
+
+.main-page-right-content {
+    width: 800px;
+    border-radius: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.play-icon {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 615px;
+    top: 556px;
 }
