@@ -93,8 +93,9 @@ header {
 /* main page */
 
 .main-page {
+    width: 90%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     gap: 40px;
 }
@@ -125,6 +126,7 @@ header {
 .explore-btn a {
     color: black;
     text-decoration: none;
+    font-size: 20px;
 }
 
 .explore-btn:hover {
@@ -198,4 +200,47 @@ header {
     height: 200px;
     left: 615px;
     top: 556px;
+}
+
+.popular-categories {
+    width: 90%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.popular-row1 {
+    padding-bottom: 40px;
+}
+
+.popular-row2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.categories-card {
+    padding-top: 15px;
+    padding-bottom: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 200px;
+    height: 360px;
+    background: #2C2D31;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    transition-duration: 1s;
+}
+
+.categories-card img {
+    width: 190px;
+    height: 225px;
+}
+
+.categories-card:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }
