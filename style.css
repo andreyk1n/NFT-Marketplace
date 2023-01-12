@@ -395,3 +395,54 @@ table tr td {
     background-color: #2a8574;
 }
 
+/* tranding nfts */
+
+.tranding-nfts {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.tranding-row1 {
+
+}
+
+.tranding-row2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+
+.tranding-item {
+    width: 320px;
+    height: 550px;
+    background: #1D1E22;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.tranding-container2 {
+    width: 290px;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #2C2D31;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.tranding-container1 {
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
