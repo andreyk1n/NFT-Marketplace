@@ -617,3 +617,44 @@ table tr td {
     justify-content: space-around;
     align-items: center; 
 }
+
+/* footer */
+
+footer {
+    background: #1D1E22;
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-row1 {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* scroll */
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #52FFE0 #101010;
+  }
+
+  *::-webkit-scrollbar {
+    width: 22px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #101010;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #52FFE0;
+    border-radius: 20px;
+    border: 3px solid #101010;
+  }
+  
