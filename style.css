@@ -761,6 +761,10 @@ footer {
 }
 
 @media (min-width:1241px) {
+    .alternative-collection-row2 {
+        display: none;
+    }
+    
     .popular-row2 {
         display: flex;
         justify-content: center;
@@ -812,6 +816,10 @@ footer {
 }
 
 @media (min-width:769px) and (max-width:1240px) {
+    .alternative-collection-row2 {
+        display: none;
+    }
+
     .popular-row2 {
         display: flex;
         justify-content: center;
@@ -976,6 +984,10 @@ footer {
 }
 
 @media (min-width:569px) and (max-width:768px) {
+
+    .alternative-collection-row2 {
+        display: none;
+    }
 
     .hamburger-menu {
         display: block;
@@ -1182,6 +1194,10 @@ footer {
 }
 
 @media (min-width:320px) and (max-width:568px) {
+
+    .alternative-collection-row2 {
+        display: none;
+    }
 
     .download-row1 {
         display: flex;
@@ -1434,6 +1450,28 @@ footer {
 }
 
 @media (max-width:320px) {
+
+    .top-collection {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: #1D1E22;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .alternative-collection-row2 {
+        width: 90%;
+        /* height: 982px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
     .download-row1 {
         display: flex;
         justify-content: center;
@@ -1514,7 +1552,7 @@ footer {
     }
 
     .main-page-left {
-        width: 70%;
+        width: 95%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1544,15 +1582,11 @@ footer {
     }
 
     .collection-row2 {
-        width: 90%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 50px;
+        display: none;
     }
 
     .top-user-container {
-        width: 100px;
+        width: 180px;
         height: 270px;
         background: rgb(44, 45, 49);
         border-radius: 30px;
@@ -1631,17 +1665,50 @@ footer {
         gap: 20px;
     }
 
+    .insights-item {
+        width: 400px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        
+    }
+
+    .insights-item img {
+        width: 250px;
+        height: 150px;
+    }
+
+    .insights {
+        width: 100%;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        background: #1D1E22;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
 
     .main-page-left-grid-container {
         display: grid;
         grid-template-areas:
-            'explore creators curly'
-            'artworks auction artist';
+            /* 'explore creators curly'
+            'artworks auction artist' */
+            'creators artworks'
+            'curly auction'
+            'curly artist'
+            'explore explore'
+            ;
         gap: 5px;
     }
 
     .explore-btn {
-        width: 100px;
+        width: 290px;
         height: 60px;
         display: flex;
         justify-content: center;
@@ -1684,5 +1751,13 @@ footer {
 
     .connect-value-btn {
         display: none;
+    }
+
+    .footer-row1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
     }
 }
